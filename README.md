@@ -11,5 +11,23 @@ Training Custom object detection in Tensorflow object Detection API
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
 
 
+```bash
+conda create -n tensorflow1 pip
+activate tensorflow1
+
+pip install --ignore-installed --upgrade tensorflow-gpu
+
+conda install -c anaconda protobuf
+pip install pillow
+pip install lxml
+pip install jupyter
+pip install matplotlib
+pip install pandas
+pip install opencv-python
+
+
+```
+
+
 
 
