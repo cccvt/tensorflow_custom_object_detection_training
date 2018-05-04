@@ -28,7 +28,9 @@ pip install matplotlib
 pip install pandas
 pip install opencv-python
 
-
+export PYTHONPATH=~/Desktop/tf_training/models:$PYTHONPATH
+export PYTHONPATH=~/Desktop/tf_training/models/research:$PYTHONPATH
+export PYTHONPATH=~/Desktop/tf_training/models/research/slim:$PYTHONPATH
 ```
 
 
