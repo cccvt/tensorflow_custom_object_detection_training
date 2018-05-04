@@ -16,7 +16,7 @@ Training Custom object detection in Tensorflow object Detection API
 
 ```bash
 conda create -n tensorflow1 pip
-activate tensorflow1
+source activate tensorflow1
 
 pip install --ignore-installed --upgrade tensorflow-gpu
 
@@ -33,7 +33,7 @@ export PYTHONPATH=~/Desktop/tf_training/models/research:$PYTHONPATH
 export PYTHONPATH=~/Desktop/tf_training/models/research/slim:$PYTHONPATH
 
 # Run the following from models/research:
-protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto
+protoc object_detection/protos/*.proto --python_out=.
 
 python setup.py build
 python setup.py install
@@ -42,7 +42,7 @@ python setup.py install
 cd object_detection
 jupyter notebook object_detection_tutorial.ipynb
 ```
-# Steps:
+### Steps:
 1. Extract contents of models in ~Deskop/tf_training
 2. Extract "faster_rcnn_inception_v2_coco" in models/research/object_detection
 3. Extract the contents of "TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10" to object_detection
