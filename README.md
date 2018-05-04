@@ -10,6 +10,9 @@ Training Custom object detection in Tensorflow object Detection API
 2. Download model:
 https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
 
+3. Download Anaconda3 for Python3.6
+https://www.anaconda.com/download/#linux
+
 
 ```bash
 conda create -n tensorflow1 pip
