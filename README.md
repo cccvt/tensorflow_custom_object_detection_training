@@ -42,4 +42,12 @@ python setup.py install
 cd object_detection
 jupyter notebook object_detection_tutorial.ipynb
 ```
-
+# Steps:
+1. Extract contents of models in ~Deskop/tf_training
+2. Extract "faster_rcnn_inception_v2_coco" in models/research/object_detection
+3. Extract the contents of "TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10" to object_detection
+4. Empty the following directories:
+   a) training
+   b) inference_graph
+   c) images/test
+   d) images/train
