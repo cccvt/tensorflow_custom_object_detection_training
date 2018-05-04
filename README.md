@@ -41,6 +41,12 @@ python setup.py install
 # Open the default object detector and verify the process
 cd object_detection
 jupyter notebook object_detection_tutorial.ipynb
+
+# labelImg  (Python2)
+sudo apt-get install pyqt4-dev-tools
+sudo pip install lxml
+make qt4py2
+python labelImg.py
 ```
 ### Steps:
 1. Extract contents of models in ~Deskop/tf_training
