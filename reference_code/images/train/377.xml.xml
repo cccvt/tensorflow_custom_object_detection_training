@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>377.jpg</filename>
+	<path>/home/prasad/Desktop/tf_training/label_image/images/377.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>134</width>
+		<height>200</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>knife</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>11</xmin>
+			<ymin>1</ymin>
+			<xmax>36</xmax>
+			<ymax>179</ymax>
+		</bndbox>
+	</object>
+</annotation>
