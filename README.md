@@ -1,14 +1,6 @@
 # Tensorflow Custom Object Detection Training
 Training Custom object detection in Tensorflow object Detection API
 
-
-## Installation and Setup:
-
-=======
-# Tensorflow Custom Object Detection Training
-Training Custom object detection in Tensorflow object Detection API
-
-
 ## Installation and Setup:
 1. Download Tensorflow Repository models:
    https://github.com/tensorflow/models
@@ -64,4 +56,4 @@ python labelImg.py
    b) inference_graph
    c) images/test
    d) images/train
->>>>>>> 300c22f5d2ec2759d2c70c856a17468d139e8723
+ 
