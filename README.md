@@ -11,6 +11,9 @@ Training Custom object detection in Tensorflow object Detection API
 
 3. Download Anaconda3 for Python3.6:
    https://www.anaconda.com/download/#linux
+   
+4. Clone the following Repo:
+   https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
 
 
 ```bash
