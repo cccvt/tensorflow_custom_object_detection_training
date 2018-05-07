@@ -59,4 +59,14 @@ python labelImg.py
    b) inference_graph
    c) images/test
    d) images/train
+5. Create xml annotations using label_image/program/labelImg.py
+6. Convert xml annotations to csv by running the following in reference_code:
+   ```bash
+   python xml_to_csv.py
+   ```
+7. Generate tf.record files for both test and train labels by running the following in reference_code:
+   ```bash
+   python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
+   python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
+   ```
  
