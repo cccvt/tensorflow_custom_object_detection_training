@@ -1,5 +1,5 @@
 # Tensorflow Custom Object Detection Training
-Training Custom object detection in Tensorflow object Detection API
+Training Custom object (knife) detection in Tensorflow object Detection API
 
 ## Installation and Setup:
 1. Download Tensorflow Repository models:
@@ -9,26 +9,21 @@ Training Custom object detection in Tensorflow object Detection API
 2. Download model:
    https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
 
-3. Download Anaconda3 for Python3.6:
-   https://www.anaconda.com/download/#linux
-   
-4. Clone the following Repo:
+ 
+3. Clone the following Repo:
    https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10
 
 
 ```bash
-conda create -n tensorflow1 pip
-source activate tensorflow1
+# labelImg  (Python2)
+sudo apt-get install pyqt4-dev-tools
+sudo pip install lxml
+make qt4py2
+python labelImg.py
 
-pip install --ignore-installed --upgrade tensorflow-gpu
-
-conda install -c anaconda protobuf
-pip install pillow
-pip install lxml
-pip install jupyter
-pip install matplotlib
-pip install pandas
-pip install opencv-python
+# Run the following in Paperspace VM
+sudo pip2 install tensorflow==1.5.0
+sudo apt-get install protobuf-compiler python-pil python-lxml python-tk
 
 export PYTHONPATH=~/Desktop/tf_training/models:$PYTHONPATH
 export PYTHONPATH=~/Desktop/tf_training/models/research:$PYTHONPATH
@@ -36,19 +31,7 @@ export PYTHONPATH=~/Desktop/tf_training/models/research/slim:$PYTHONPATH
 
 # Run the following from models/research:
 protoc object_detection/protos/*.proto --python_out=.
-
-python setup.py build
-python setup.py install
-
-# Open the default object detector and verify the process
-cd object_detection
-jupyter notebook object_detection_tutorial.ipynb
-
-# labelImg  (Python2)
-sudo apt-get install pyqt4-dev-tools
-sudo pip install lxml
-make qt4py2
-python labelImg.py
+export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 ```
 ### Steps:
 1. Extract contents of models in ~Deskop/tf_training
@@ -70,4 +53,3 @@ python labelImg.py
    python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
    ```
 8. Create labelmap and training configuration:
-path to the model ckpt file
