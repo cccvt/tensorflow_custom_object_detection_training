@@ -1,0 +1,26 @@
+<annotation>
+	<folder>camera images</folder>
+	<filename>IMG_20180508_162649594.jpg</filename>
+	<path>/home/prasad/Desktop/tf_training/camera images/IMG_20180508_162649594.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>768</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>knife</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>176</xmin>
+			<ymin>293</ymin>
+			<xmax>660</xmax>
+			<ymax>370</ymax>
+		</bndbox>
+	</object>
+</annotation>
