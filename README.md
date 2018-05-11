@@ -52,14 +52,14 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
    python generate_tfrecord.py --csv_input=images/train_labels.csv --image_dir=images/train --output_path=train.record
    python generate_tfrecord.py --csv_input=images/test_labels.csv --image_dir=images/test --output_path=test.record
    ```
-8. Create labelmap and training configuration file "faster_rcnn_inception_v2_pets.config"
+8. Create labelmap-"labelmap.pbtxt" and training configuration file-"faster_rcnn_inception_v2_pets.config"
 
 9. Start training by using following command:
-```bash
-python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
-```
+   ```bash
+   python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
+   ```
 
 10. Export the inference_graph (trained model):
-``` bash
-python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
-```
+   ``` bash
+   python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+   ```
