@@ -60,6 +60,6 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
    ```
 
 10. Export the inference_graph (trained model):
-   ``` bash
+   ```bash
    python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
    ```
