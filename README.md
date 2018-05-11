@@ -54,7 +54,7 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
    ```
 8. Create labelmap-"labelmap.pbtxt" and training configuration file-"faster_rcnn_inception_v2_pets.config"
 
-9. Start training by using following command:
+9. Copy training_files contents to object_detection directory and start training by using following command:
    ```bash
    python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
    ```
